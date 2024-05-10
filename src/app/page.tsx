@@ -1,10 +1,19 @@
+"use client";
 import DexScreener from "@/components/icons/dexscreener";
 import Jupiter from "@/components/icons/jupiter";
 import Telegram from "@/components/icons/telegram";
 import TwitterX from "@/components/icons/twitterx";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const vidRef: any = useRef();
+
+  useEffect(() => {
+    if (!vidRef.current) return;
+    vidRef.current.play();
+  }, [vidRef]);
+
   return (
     <main className="h-full">
       <div className="h-full flex flex-col justify-center items-center relative gap-10 sm:gap-6">
@@ -33,7 +42,7 @@ export default function Home() {
         </div>
 
         <div className="-mt-20 flex justify-center">
-          <video controls autoPlay loop>
+          <video loop autoPlay ref={ vidRef }>
             <source src="/videos/rizzy.mp4" type="video/mp4" />
           </video>
         </div>
