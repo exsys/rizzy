@@ -38,7 +38,7 @@ export default function Home() {
           </video>
         </div>
 
-        <h1 className="text-5xl">
+        <h1 className="text-5xl font-semibold">
           $rizzy
         </h1>
 
