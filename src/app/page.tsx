@@ -33,7 +33,7 @@ export default function Home() {
         </div>
 
         <div className="-mt-20 flex justify-center">
-          <video autoPlay loop>
+          <video controls autoPlay loop>
             <source src="/videos/rizzy.mp4" type="video/mp4" />
           </video>
         </div>
