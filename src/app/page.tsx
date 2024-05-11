@@ -11,6 +11,7 @@ export default function Home() {
   const vidRef: any = useRef();
 
   useEffect(() => {
+    if (!vidRef) return;
     vidRef.current.muted = false;
   }, [vidRef]);
 
