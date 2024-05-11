@@ -6,6 +6,9 @@ const nextConfig = {
     trailingSlash: true,
     assetPrefix: '/',
     images: { unoptimized: true },
+    sassOptions: {
+        includePaths: ["styles"],
+    },
 };
 
 export default nextConfig;
