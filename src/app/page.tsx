@@ -20,11 +20,11 @@ export default function Home() {
       <div className="h-full flex flex-col justify-center items-center relative gap-10 sm:gap-6">
         <div className="hidden sm:flex absolute top-16 justify-between items-center w-full px-10 xl:px-20">
           <div className="flex items-center gap-10">
-            <Link href={""} target="_blank"
+            <Link href={"https://twitter.com/rizzycto_sol"} target="_blank"
               className="cursor-pointer">
               <TwitterX className="w-16 h-16 fill-white hover:fill-gray-400 transition-all" />
             </Link>
-            <Link href={""} target="_blank"
+            <Link href={"https://t.me/RizzCatCTOPortal"} target="_blank"
               className="cursor-pointer">
               <Telegram className="w-12 h-12 fill-white hover:fill-gray-400 transition-all" />
             </Link>
